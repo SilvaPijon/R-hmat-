@@ -4,7 +4,7 @@ public class Main {
         Isik isik = new Isik();
         Küsimused küsimused;
         Arvutaja arvutaja = new Arvutaja();
-        System.out.println(isik.getA());
+
         if (isik.getSugu().equalsIgnoreCase("M")) {
             küsimused = new KüsimusedM();
         } else {
@@ -17,6 +17,11 @@ public class Main {
         stabiilne.teavitaKasutajat(protsendid[0]);
         Isiksus analüüsiv = new Analüüsiv();
         analüüsiv.teavitaKasutajat(protsendid[1]);
+        Isiksus domineeriv = new Domineeriv();
+        domineeriv.teavitaKasutajat(protsendid[2]);
+        Isiksus sotsiaalne = new Sotsiaalne();
+        sotsiaalne.teavitaKasutajat(protsendid[3]);
+        PäevaMõttetera.mõtteteraLeidija();
 
 
 

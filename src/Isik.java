@@ -14,8 +14,15 @@ public class Isik {
         Scanner myObj = new Scanner(System.in);  // Create a Scanner object
         System.out.println("Palun sisesta enda nimi");
         this.nimi = myObj.nextLine();
-        System.out.println("Palun sisesta enda sugu");
-        this.sugu = myObj.nextLine();
+        while (true) {
+
+            System.out.println("Palun sisesta enda sugu(M/N)");
+            this.sugu = myObj.nextLine();
+            if ("m".equalsIgnoreCase(this.sugu) || "n".equalsIgnoreCase(this.sugu)){
+                break;
+            }
+            System.out.println("Midagi läks valesti");
+        }
 
         this.a = 0;
         this.b = 0;
