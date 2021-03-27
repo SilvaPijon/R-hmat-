@@ -89,6 +89,10 @@ public class Isik {
         c++;
     }
 
+
+    public void suurendaD(){
+        d++;
+    }
     @Override
     public String toString() {
         return "Isik{" +
@@ -100,10 +104,5 @@ public class Isik {
                 ", d=" + d +
                 '}';
     }
-
-    public void suurendaD(){
-        d++;
-    }
-
 
 }

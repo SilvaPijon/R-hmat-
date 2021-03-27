@@ -21,6 +21,7 @@ public class Main {
         domineeriv.teavitaKasutajat(protsendid[2]);
         Isiksus sotsiaalne = new Sotsiaalne();
         sotsiaalne.teavitaKasutajat(protsendid[3]);
+        System.out.println("Sinu tänase päeva mõttetera on:");
         PäevaMõttetera.mõtteteraLeidija();
 
 
